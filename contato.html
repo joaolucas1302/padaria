@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato conosco. Endereço, telefone, horários e localização da Padaria Artesanal.">
+    <title>Contato - Padaria Artesanal</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <i class="fas fa-bread-slice"></i>
+                        <span>Padaria Artesanal</span>
+                    </div>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html" class="active">Contato</a></li>
+                        <li><a href="https://wa.me/5599999999999" class="btn-nav-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Fazer Pedido
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Interno -->
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <h1>Fale Conosco</h1>
+            <p>Estamos prontos para atender você</p>
+        </div>
+    </section>
+
+    <!-- Informações de Contato -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Endereço</h3>
+                    <p>Rua Exemplo, 123<br>Bairro Centro<br>Cidade - Estado<br>CEP: 00000-000</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefone</h3>
+                    <p><a href="tel:5599999999999">(99) 99999-9999</a></p>
+                    <p class="small-text">Ligamos de volta se estiver ocupado</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/5599999999999" target="_blank">(99) 99999-9999</a></p>
+                    <a href="https://wa.me/5599999999999" class="btn btn-success" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Conversar agora
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-mail</h3>
+                    <p><a href="mailto:contato@padaria.com">contato@padaria.com</a></p>
+                    <p class="small-text">Respondemos em até 24 horas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horário de Funcionamento -->
+    <section class="schedule-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Horário de Funcionamento</h2>
+                <p class="section-subtitle">Estamos abertos para servir você</p>
+            </div>
+            <div class="schedule-box">
+                <div class="schedule-item">
+                    <div class="schedule-day">
+                        <i class="far fa-calendar"></i>
+                        <strong>Segunda a Sexta</strong>
+                    </div>
+                    <div class="schedule-time">
+                        <i class="far fa-clock"></i>
+                        6h às 20h
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-day">
+                        <i class="far fa-calendar"></i>
+                        <strong>Sábado</strong>
+                    </div>
+                    <div class="schedule-time">
+                        <i class="far fa-clock"></i>
+                        6h às 20h
+                    </div>
+                </div>
+                <div class="schedule-item highlight">
+                    <div class="schedule-day">
+                        <i class="far fa-calendar"></i>
+                        <strong>Domingo</strong>
+                    </div>
+                    <div class="schedule-time">
+                        <i class="far fa-clock"></i>
+                        6h às 13h
+                    </div>
+                </div>
+                <div class="schedule-note">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Pães quentinhos saem do forno de hora em hora!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Envie sua mensagem</h2>
+                <p class="section-subtitle">Preencha o formulário abaixo e entraremos em contato</p>
+            </div>
+            <div class="form-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Nome completo *
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> E-mail *
+                            </label>
+                            <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Telefone *
+                            </label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(99) 99999-9999">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> Assunto
+                            </label>
+                            <select id="subject" name="subject">
+                                <option value="">Selecione um assunto</option>
+                                <option value="encomenda">Encomenda</option>
+                                <option value="duvida">Dúvida</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="reclamacao">Reclamação</option>
+                                <option value="elogio">Elogio</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fas fa-comment"></i> Mensagem *
+                        </label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i> Enviar mensagem
+                        </button>
+                        <p class="form-note">* Campos obrigatórios</p>
+                    </div>
+                </form>
+                <div class="form-success" id="formSuccess" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Mensagem enviada com sucesso!</h3>
+                    <p>Obrigado pelo contato. Retornaremos em breve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como chegar</h2>
+                <p class="section-subtitle">Veja nossa localização no mapa</p>
+            </div>
+        </div>
+        <div class="map-container">
+            <!-- IMPORTANTE: Substitua a URL abaixo pela URL do Google Maps da sua localização real -->
+            <!-- Para gerar o iframe: vá ao Google Maps > encontre seu endereço > clique em "Compartilhar" > "Incorporar um mapa" -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1978714524455!2d-46.65622968502207!3d-23.56142568468062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1621234567890!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="map-info">
+            <div class="container">
+                <div class="map-details">
+                    <div class="map-detail-item">
+                        <i class="fas fa-car"></i>
+                        <div>
+                            <strong>Estacionamento</strong>
+                            <p>Vagas disponíveis em frente à loja</p>
+                        </div>
+                    </div>
+                    <div class="map-detail-item">
+                        <i class="fas fa-bus"></i>
+                        <div>
+                            <strong>Transporte Público</strong>
+                            <p>Linhas 123, 456 e 789 - Ponto em frente</p>
+                        </div>
+                    </div>
+                    <div class="map-detail-item">
+                        <i class="fas fa-wheelchair"></i>
+                        <div>
+                            <strong>Acessibilidade</strong>
+                            <p>Local adaptado para cadeirantes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redes Sociais -->
+    <section class="social-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Siga-nos nas redes sociais</h2>
+                <p class="section-subtitle">Fique por dentro das novidades e promoções</p>
+            </div>
+            <div class="social-buttons">
+                <a href="#" class="social-btn facebook" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-btn instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://wa.me/5599999999999" class="social-btn whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-bread-slice"></i>
+                        <span>Padaria Artesanal</span>
+                    </div>
+                    <p>Aqui o pão sai do forno quentinho todos os dias para fazer parte da sua mesa.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5599999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Horário de Funcionamento</h3>
+                    <ul class="footer-schedule">
+                        <li><strong>Segunda a Sábado:</strong> 6h às 20h</li>
+                        <li><strong>Domingo:</strong> 6h às 13h</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> (99) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@padaria.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Bairro</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Padaria Artesanal. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5599999999999" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

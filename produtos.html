@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça todos os nossos produtos: pães artesanais, bolos caseiros, doces e salgados. Faça sua encomenda pelo WhatsApp.">
+    <title>Nossos Produtos - Padaria Artesanal</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <i class="fas fa-bread-slice"></i>
+                        <span>Padaria Artesanal</span>
+                    </div>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="produtos.html" class="active">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="https://wa.me/5599999999999" class="btn-nav-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Fazer Pedido
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Interno -->
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <h1>Nossos Produtos</h1>
+            <p>Qualidade e sabor em cada mordida</p>
+        </div>
+    </section>
+
+    <!-- Filtro de Categorias -->
+    <section class="categories-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="paes">Pães</button>
+                <button class="filter-btn" data-category="bolos">Bolos</button>
+                <button class="filter-btn" data-category="doces">Doces</button>
+                <button class="filter-btn" data-category="salgados">Salgados</button>
+                <button class="filter-btn" data-category="encomendas">Encomendas Especiais</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos - PÃES -->
+    <section class="products-catalog">
+        <div class="container">
+            <div class="category-title">
+                <h2><i class="fas fa-bread-slice"></i> Pães Artesanais</h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-item" data-category="paes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&h=400&fit=crop" alt="Pão Francês">
+                        <div class="product-badge">Mais vendido</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pão Francês</h3>
+                        <p>Crocante por fora, macio por dentro. Assado várias vezes ao dia para garantir sempre fresquinho.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar pão francês" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="paes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=600&h=400&fit=crop" alt="Pão Integral">
+                        <div class="product-badge healthy">Saudável</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pão Integral</h3>
+                        <p>Rico em fibras e nutrientes. Feito com farinha integral e grãos selecionados.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar pão integral" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="paes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=600&h=400&fit=crop" alt="Pão de Forma">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pão de Forma</h3>
+                        <p>Perfeito para sanduíches e torradas. Macio e saboroso, ideal para toda a família.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar pão de forma" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="paes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608198399988-841b8f0be1e2?w=600&h=400&fit=crop" alt="Pão de Queijo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pão de Queijo</h3>
+                        <p>Receita tradicional mineira. Quentinho e sequinho, com muito queijo.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar pão de queijo" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="paes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?w=600&h=400&fit=crop" alt="Ciabatta">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ciabatta</h3>
+                        <p>Pão italiano com casca crocante e miolo aerado. Perfeito para bruschettas.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar ciabatta" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="paes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1585478259715-876acc4074ed?w=600&h=400&fit=crop" alt="Baguete">
+                    </div>
+                    <div class="product-info">
+                        <h3>Baguete</h3>
+                        <p>Pão francês alongado, crocante e aromático. Ideal para acompanhar refeições.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar baguete" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOLOS -->
+            <div class="category-title" style="margin-top: 4rem;">
+                <h2><i class="fas fa-birthday-cake"></i> Bolos Caseiros</h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-item" data-category="bolos">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop" alt="Bolo de Chocolate">
+                        <div class="product-badge special">Especial</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolo de Chocolate</h3>
+                        <p>Massa macia, cobertura cremosa. O favorito de todos! Diversos tamanhos disponíveis.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar bolo de chocolate" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="bolos">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1519915212116-7cfef71f1d3e?w=600&h=400&fit=crop" alt="Bolo de Cenoura">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolo de Cenoura</h3>
+                        <p>Com cobertura de chocolate cremosa. Um clássico que nunca sai de moda.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar bolo de cenoura" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="bolos">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551879400-111a9087cd86?w=600&h=400&fit=crop" alt="Bolo de Aniversário">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolo de Aniversário</h3>
+                        <p>Personalizamos para tornar sua festa especial. Diversos sabores e decorações.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar um bolo de aniversário" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="bolos">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1557925923-cd4648e211a0?w=600&h=400&fit=crop" alt="Bolo de Fubá">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolo de Fubá</h3>
+                        <p>Receita tradicional, cremoso e saboroso. Perfeito com um café.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar bolo de fubá" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DOCES -->
+            <div class="category-title" style="margin-top: 4rem;">
+                <h2><i class="fas fa-cookie-bite"></i> Doces</h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-item" data-category="doces">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586040140378-b5d2f34dd878?w=600&h=400&fit=crop" alt="Sonho">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sonho</h3>
+                        <p>Recheio cremoso de doce de leite. Macio e irresistível.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar sonhos" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="doces">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&h=400&fit=crop" alt="Croissant">
+                    </div>
+                    <div class="product-info">
+                        <h3>Croissant</h3>
+                        <p>Massa folhada crocante. Simples ou recheado com chocolate e doce de leite.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar croissants" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="doces">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?w=600&h=400&fit=crop" alt="Brownie">
+                    </div>
+                    <div class="product-info">
+                        <h3>Brownie</h3>
+                        <p>Intenso chocolate, fudgy por dentro. Para os chocólatras de plantão.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar brownies" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="doces">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1612203328474-f0958d5b0dc3?w=600&h=400&fit=crop" alt="Torta de Limão">
+                    </div>
+                    <div class="product-info">
+                        <h3>Torta de Limão</h3>
+                        <p>Equilíbrio perfeito entre doce e azedo. Com merengue suíço crocante.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar torta de limão" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SALGADOS -->
+            <div class="category-title" style="margin-top: 4rem;">
+                <h2><i class="fas fa-pizza-slice"></i> Salgados</h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-item" data-category="salgados">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1619453683870-f842a4e51b67?w=600&h=400&fit=crop" alt="Coxinha">
+                    </div>
+                    <div class="product-info">
+                        <h3>Coxinha</h3>
+                        <p>Recheio de frango temperado, massa sequinha. Um clássico brasileiro.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar coxinhas" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="salgados">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&h=400&fit=crop" alt="Empada">
+                    </div>
+                    <div class="product-info">
+                        <h3>Empada</h3>
+                        <p>Massa amanteigada com diversos recheios: frango, palmito, camarão.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar empadas" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="salgados">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1573165231977-3f0e27806045?w=600&h=400&fit=crop" alt="Esfiha">
+                    </div>
+                    <div class="product-info">
+                        <h3>Esfiha</h3>
+                        <p>Aberta ou fechada, com carne ou queijo. Sabor árabe autêntico.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar esfihas" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+                <div class="product-item" data-category="salgados">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&h=400&fit=crop" alt="Pastel">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pastel</h3>
+                        <p>Massa crocante, recheios variados. Frito na hora para você.</p>
+                        <a href="https://wa.me/5599999999999?text=Olá! Gostaria de encomendar pastéis" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ENCOMENDAS ESPECIAIS -->
+            <div class="category-title" style="margin-top: 4rem;">
+                <h2><i class="fas fa-gift"></i> Encomendas Especiais</h2>
+            </div>
+            <div class="encomendas-info">
+                <p class="lead">Fazemos encomendas personalizadas para tornar seu evento ainda mais especial!</p>
+                <div class="encomendas-grid">
+                    <div class="encomenda-card" data-category="encomendas">
+                        <i class="fas fa-birthday-cake"></i>
+                        <h4>Bolos de Aniversário</h4>
+                        <p>Personalizados com o tema que você escolher</p>
+                    </div>
+                    <div class="encomenda-card" data-category="encomendas">
+                        <i class="fas fa-heart"></i>
+                        <h4>Bolos de Casamento</h4>
+                        <p>Elegância e sabor para seu grande dia</p>
+                    </div>
+                    <div class="encomenda-card" data-category="encomendas">
+                        <i class="fas fa-box"></i>
+                        <h4>Kits para Festas</h4>
+                        <p>Salgados, doces e pães em quantidade</p>
+                    </div>
+                    <div class="encomenda-card" data-category="encomendas">
+                        <i class="fas fa-coffee"></i>
+                        <h4>Coffee Break</h4>
+                        <p>Perfeito para reuniões e eventos corporativos</p>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 2rem;">
+                    <a href="https://wa.me/5599999999999?text=Olá! Gostaria de fazer uma encomenda especial" class="btn btn-primary btn-lg" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Fazer encomenda especial
+                    </a>
+                    <p style="margin-top: 1rem; color: #666;">Encomendas com antecedência mínima de 48 horas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-bread-slice"></i>
+                        <span>Padaria Artesanal</span>
+                    </div>
+                    <p>Aqui o pão sai do forno quentinho todos os dias para fazer parte da sua mesa.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5599999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Horário de Funcionamento</h3>
+                    <ul class="footer-schedule">
+                        <li><strong>Segunda a Sábado:</strong> 6h às 20h</li>
+                        <li><strong>Domingo:</strong> 6h às 13h</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> (99) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@padaria.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123 - Bairro</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Padaria Artesanal. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5599999999999" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
